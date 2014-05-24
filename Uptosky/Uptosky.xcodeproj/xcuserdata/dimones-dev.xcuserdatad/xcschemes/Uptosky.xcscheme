@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "468F34EF193081F900D5B82E"
+               BlueprintIdentifier = "46E85F871930962A00DD1FD6"
                BuildableName = "Uptosky.app"
                BlueprintName = "Uptosky"
                ReferencedContainer = "container:Uptosky.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "468F3510193081F900D5B82E"
+               BlueprintIdentifier = "46E85FA81930962A00DD1FD6"
                BuildableName = "UptoskyTests.xctest"
                BlueprintName = "UptoskyTests"
                ReferencedContainer = "container:Uptosky.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "468F34EF193081F900D5B82E"
+            BlueprintIdentifier = "46E85F871930962A00DD1FD6"
             BuildableName = "Uptosky.app"
             BlueprintName = "Uptosky"
             ReferencedContainer = "container:Uptosky.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "468F34EF193081F900D5B82E"
+            BlueprintIdentifier = "46E85F871930962A00DD1FD6"
             BuildableName = "Uptosky.app"
             BlueprintName = "Uptosky"
             ReferencedContainer = "container:Uptosky.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "468F34EF193081F900D5B82E"
+            BlueprintIdentifier = "46E85F871930962A00DD1FD6"
             BuildableName = "Uptosky.app"
             BlueprintName = "Uptosky"
             ReferencedContainer = "container:Uptosky.xcodeproj">

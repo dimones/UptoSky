@@ -7,196 +7,183 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		468F34F4193081F900D5B82E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468F34F3193081F900D5B82E /* Foundation.framework */; };
-		468F34F6193081F900D5B82E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468F34F5193081F900D5B82E /* CoreGraphics.framework */; };
-		468F34F8193081F900D5B82E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468F34F7193081F900D5B82E /* UIKit.framework */; };
-		468F34FE193081F900D5B82E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 468F34FC193081F900D5B82E /* InfoPlist.strings */; };
-		468F3500193081F900D5B82E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 468F34FF193081F900D5B82E /* main.m */; };
-		468F3504193081F900D5B82E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 468F3503193081F900D5B82E /* AppDelegate.m */; };
-		468F3507193081F900D5B82E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468F3505193081F900D5B82E /* Main.storyboard */; };
-		468F350A193081F900D5B82E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468F3509193081F900D5B82E /* ViewController.m */; };
-		468F350C193081F900D5B82E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 468F350B193081F900D5B82E /* Images.xcassets */; };
-		468F3513193081F900D5B82E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468F3512193081F900D5B82E /* XCTest.framework */; };
-		468F3514193081F900D5B82E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468F34F3193081F900D5B82E /* Foundation.framework */; };
-		468F3515193081F900D5B82E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468F34F7193081F900D5B82E /* UIKit.framework */; };
-		468F351D193081F900D5B82E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 468F351B193081F900D5B82E /* InfoPlist.strings */; };
-		468F351F193081F900D5B82E /* UptoskyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 468F351E193081F900D5B82E /* UptoskyTests.m */; };
-		468F352B19308A6400D5B82E /* EFCircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 468F352A19308A6400D5B82E /* EFCircularSlider.m */; };
-		468F352E19308D8300D5B82E /* startControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468F352D19308D8300D5B82E /* startControllerViewController.m */; };
-		468F353119308FA600D5B82E /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = 468F353019308FA600D5B82E /* 222.png */; };
-		468F35341930906F00D5B82E /* ForestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468F35331930906F00D5B82E /* ForestController.m */; };
+		46E85F8C1930962A00DD1FD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E85F8B1930962A00DD1FD6 /* Foundation.framework */; };
+		46E85F8E1930962A00DD1FD6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E85F8D1930962A00DD1FD6 /* CoreGraphics.framework */; };
+		46E85F901930962A00DD1FD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E85F8F1930962A00DD1FD6 /* UIKit.framework */; };
+		46E85F961930962A00DD1FD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46E85F941930962A00DD1FD6 /* InfoPlist.strings */; };
+		46E85F981930962A00DD1FD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E85F971930962A00DD1FD6 /* main.m */; };
+		46E85F9C1930962A00DD1FD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E85F9B1930962A00DD1FD6 /* AppDelegate.m */; };
+		46E85F9F1930962A00DD1FD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E85F9D1930962A00DD1FD6 /* Main.storyboard */; };
+		46E85FA21930962A00DD1FD6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E85FA11930962A00DD1FD6 /* ViewController.m */; };
+		46E85FA41930962A00DD1FD6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E85FA31930962A00DD1FD6 /* Images.xcassets */; };
+		46E85FAB1930962A00DD1FD6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E85FAA1930962A00DD1FD6 /* XCTest.framework */; };
+		46E85FAC1930962A00DD1FD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E85F8B1930962A00DD1FD6 /* Foundation.framework */; };
+		46E85FAD1930962A00DD1FD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E85F8F1930962A00DD1FD6 /* UIKit.framework */; };
+		46E85FB51930962A00DD1FD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46E85FB31930962A00DD1FD6 /* InfoPlist.strings */; };
+		46E85FB71930962A00DD1FD6 /* UptoskyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E85FB61930962A00DD1FD6 /* UptoskyTests.m */; };
+		46E85FC1193096A800DD1FD6 /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = 46E85FC0193096A800DD1FD6 /* 222.png */; };
+		46E85FC8193097CF00DD1FD6 /* ForestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E85FC7193097CF00DD1FD6 /* ForestController.m */; };
+		46E85FCE19309F0B00DD1FD6 /* UICircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E85FCC19309F0B00DD1FD6 /* UICircularSlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		468F3516193081F900D5B82E /* PBXContainerItemProxy */ = {
+		46E85FAE1930962A00DD1FD6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 468F34E8193081F900D5B82E /* Project object */;
+			containerPortal = 46E85F801930962A00DD1FD6 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 468F34EF193081F900D5B82E;
+			remoteGlobalIDString = 46E85F871930962A00DD1FD6;
 			remoteInfo = Uptosky;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		468F34F0193081F900D5B82E /* Uptosky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uptosky.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		468F34F3193081F900D5B82E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		468F34F5193081F900D5B82E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		468F34F7193081F900D5B82E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		468F34FB193081F900D5B82E /* Uptosky-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Uptosky-Info.plist"; sourceTree = "<group>"; };
-		468F34FD193081F900D5B82E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		468F34FF193081F900D5B82E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		468F3501193081F900D5B82E /* Uptosky-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Uptosky-Prefix.pch"; sourceTree = "<group>"; };
-		468F3502193081F900D5B82E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		468F3503193081F900D5B82E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		468F3506193081F900D5B82E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		468F3508193081F900D5B82E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		468F3509193081F900D5B82E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		468F350B193081F900D5B82E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		468F3511193081F900D5B82E /* UptoskyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UptoskyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		468F3512193081F900D5B82E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		468F351A193081F900D5B82E /* UptoskyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UptoskyTests-Info.plist"; sourceTree = "<group>"; };
-		468F351C193081F900D5B82E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		468F351E193081F900D5B82E /* UptoskyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UptoskyTests.m; sourceTree = "<group>"; };
-		468F352919308A6400D5B82E /* EFCircularSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCircularSlider.h; sourceTree = "<group>"; };
-		468F352A19308A6400D5B82E /* EFCircularSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCircularSlider.m; sourceTree = "<group>"; };
-		468F352C19308D8300D5B82E /* startControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = startControllerViewController.h; sourceTree = "<group>"; };
-		468F352D19308D8300D5B82E /* startControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = startControllerViewController.m; sourceTree = "<group>"; };
-		468F353019308FA600D5B82E /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 222.png; path = "../../../../Simple-Emotions/Uptosky/Uptosky/222.png"; sourceTree = "<group>"; };
-		468F35321930906F00D5B82E /* ForestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForestController.h; sourceTree = "<group>"; };
-		468F35331930906F00D5B82E /* ForestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForestController.m; sourceTree = "<group>"; };
+		46E85F881930962A00DD1FD6 /* Uptosky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uptosky.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E85F8B1930962A00DD1FD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		46E85F8D1930962A00DD1FD6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		46E85F8F1930962A00DD1FD6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		46E85F931930962A00DD1FD6 /* Uptosky-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Uptosky-Info.plist"; sourceTree = "<group>"; };
+		46E85F951930962A00DD1FD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		46E85F971930962A00DD1FD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46E85F991930962A00DD1FD6 /* Uptosky-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Uptosky-Prefix.pch"; sourceTree = "<group>"; };
+		46E85F9A1930962A00DD1FD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		46E85F9B1930962A00DD1FD6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		46E85F9E1930962A00DD1FD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46E85FA01930962A00DD1FD6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		46E85FA11930962A00DD1FD6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		46E85FA31930962A00DD1FD6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		46E85FA91930962A00DD1FD6 /* UptoskyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UptoskyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E85FAA1930962A00DD1FD6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		46E85FB21930962A00DD1FD6 /* UptoskyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UptoskyTests-Info.plist"; sourceTree = "<group>"; };
+		46E85FB41930962A00DD1FD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		46E85FB61930962A00DD1FD6 /* UptoskyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UptoskyTests.m; sourceTree = "<group>"; };
+		46E85FC0193096A800DD1FD6 /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 222.png; path = ../../../222.png; sourceTree = "<group>"; };
+		46E85FC6193097CF00DD1FD6 /* ForestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForestController.h; sourceTree = "<group>"; };
+		46E85FC7193097CF00DD1FD6 /* ForestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForestController.m; sourceTree = "<group>"; };
+		46E85FCB19309F0B00DD1FD6 /* UICircularSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICircularSlider.h; sourceTree = "<group>"; };
+		46E85FCC19309F0B00DD1FD6 /* UICircularSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICircularSlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		468F34ED193081F900D5B82E /* Frameworks */ = {
+		46E85F851930962A00DD1FD6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				468F34F6193081F900D5B82E /* CoreGraphics.framework in Frameworks */,
-				468F34F8193081F900D5B82E /* UIKit.framework in Frameworks */,
-				468F34F4193081F900D5B82E /* Foundation.framework in Frameworks */,
+				46E85F8E1930962A00DD1FD6 /* CoreGraphics.framework in Frameworks */,
+				46E85F901930962A00DD1FD6 /* UIKit.framework in Frameworks */,
+				46E85F8C1930962A00DD1FD6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		468F350E193081F900D5B82E /* Frameworks */ = {
+		46E85FA61930962A00DD1FD6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				468F3513193081F900D5B82E /* XCTest.framework in Frameworks */,
-				468F3515193081F900D5B82E /* UIKit.framework in Frameworks */,
-				468F3514193081F900D5B82E /* Foundation.framework in Frameworks */,
+				46E85FAB1930962A00DD1FD6 /* XCTest.framework in Frameworks */,
+				46E85FAD1930962A00DD1FD6 /* UIKit.framework in Frameworks */,
+				46E85FAC1930962A00DD1FD6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		468F34E7193081F900D5B82E = {
+		46E85F7F1930962A00DD1FD6 = {
 			isa = PBXGroup;
 			children = (
-				468F34F9193081F900D5B82E /* Uptosky */,
-				468F3518193081F900D5B82E /* UptoskyTests */,
-				468F34F2193081F900D5B82E /* Frameworks */,
-				468F34F1193081F900D5B82E /* Products */,
+				46E85F911930962A00DD1FD6 /* Uptosky */,
+				46E85FB01930962A00DD1FD6 /* UptoskyTests */,
+				46E85F8A1930962A00DD1FD6 /* Frameworks */,
+				46E85F891930962A00DD1FD6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		468F34F1193081F900D5B82E /* Products */ = {
+		46E85F891930962A00DD1FD6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				468F34F0193081F900D5B82E /* Uptosky.app */,
-				468F3511193081F900D5B82E /* UptoskyTests.xctest */,
+				46E85F881930962A00DD1FD6 /* Uptosky.app */,
+				46E85FA91930962A00DD1FD6 /* UptoskyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		468F34F2193081F900D5B82E /* Frameworks */ = {
+		46E85F8A1930962A00DD1FD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				468F34F3193081F900D5B82E /* Foundation.framework */,
-				468F34F5193081F900D5B82E /* CoreGraphics.framework */,
-				468F34F7193081F900D5B82E /* UIKit.framework */,
-				468F3512193081F900D5B82E /* XCTest.framework */,
+				46E85F8B1930962A00DD1FD6 /* Foundation.framework */,
+				46E85F8D1930962A00DD1FD6 /* CoreGraphics.framework */,
+				46E85F8F1930962A00DD1FD6 /* UIKit.framework */,
+				46E85FAA1930962A00DD1FD6 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		468F34F9193081F900D5B82E /* Uptosky */ = {
+		46E85F911930962A00DD1FD6 /* Uptosky */ = {
 			isa = PBXGroup;
 			children = (
-				468F352F19308F8100D5B82E /* Images */,
-				468F352819308A6400D5B82E /* EFCircularSlider */,
-				468F3502193081F900D5B82E /* AppDelegate.h */,
-				468F3503193081F900D5B82E /* AppDelegate.m */,
-				468F3505193081F900D5B82E /* Main.storyboard */,
-				468F3508193081F900D5B82E /* ViewController.h */,
-				468F3509193081F900D5B82E /* ViewController.m */,
-				468F350B193081F900D5B82E /* Images.xcassets */,
-				468F34FA193081F900D5B82E /* Supporting Files */,
-				468F352C19308D8300D5B82E /* startControllerViewController.h */,
-				468F352D19308D8300D5B82E /* startControllerViewController.m */,
-				468F35321930906F00D5B82E /* ForestController.h */,
-				468F35331930906F00D5B82E /* ForestController.m */,
+				46E85FC919309F0B00DD1FD6 /* UICircularSlider */,
+				46E85FC0193096A800DD1FD6 /* 222.png */,
+				46E85F9A1930962A00DD1FD6 /* AppDelegate.h */,
+				46E85F9B1930962A00DD1FD6 /* AppDelegate.m */,
+				46E85F9D1930962A00DD1FD6 /* Main.storyboard */,
+				46E85FA01930962A00DD1FD6 /* ViewController.h */,
+				46E85FA11930962A00DD1FD6 /* ViewController.m */,
+				46E85FA31930962A00DD1FD6 /* Images.xcassets */,
+				46E85F921930962A00DD1FD6 /* Supporting Files */,
+				46E85FC6193097CF00DD1FD6 /* ForestController.h */,
+				46E85FC7193097CF00DD1FD6 /* ForestController.m */,
 			);
 			path = Uptosky;
 			sourceTree = "<group>";
 		};
-		468F34FA193081F900D5B82E /* Supporting Files */ = {
+		46E85F921930962A00DD1FD6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				468F34FB193081F900D5B82E /* Uptosky-Info.plist */,
-				468F34FC193081F900D5B82E /* InfoPlist.strings */,
-				468F34FF193081F900D5B82E /* main.m */,
-				468F3501193081F900D5B82E /* Uptosky-Prefix.pch */,
+				46E85F931930962A00DD1FD6 /* Uptosky-Info.plist */,
+				46E85F941930962A00DD1FD6 /* InfoPlist.strings */,
+				46E85F971930962A00DD1FD6 /* main.m */,
+				46E85F991930962A00DD1FD6 /* Uptosky-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		468F3518193081F900D5B82E /* UptoskyTests */ = {
+		46E85FB01930962A00DD1FD6 /* UptoskyTests */ = {
 			isa = PBXGroup;
 			children = (
-				468F351E193081F900D5B82E /* UptoskyTests.m */,
-				468F3519193081F900D5B82E /* Supporting Files */,
+				46E85FB61930962A00DD1FD6 /* UptoskyTests.m */,
+				46E85FB11930962A00DD1FD6 /* Supporting Files */,
 			);
 			path = UptoskyTests;
 			sourceTree = "<group>";
 		};
-		468F3519193081F900D5B82E /* Supporting Files */ = {
+		46E85FB11930962A00DD1FD6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				468F351A193081F900D5B82E /* UptoskyTests-Info.plist */,
-				468F351B193081F900D5B82E /* InfoPlist.strings */,
+				46E85FB21930962A00DD1FD6 /* UptoskyTests-Info.plist */,
+				46E85FB31930962A00DD1FD6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		468F352819308A6400D5B82E /* EFCircularSlider */ = {
+		46E85FC919309F0B00DD1FD6 /* UICircularSlider */ = {
 			isa = PBXGroup;
 			children = (
-				468F352919308A6400D5B82E /* EFCircularSlider.h */,
-				468F352A19308A6400D5B82E /* EFCircularSlider.m */,
+				46E85FCB19309F0B00DD1FD6 /* UICircularSlider.h */,
+				46E85FCC19309F0B00DD1FD6 /* UICircularSlider.m */,
 			);
-			name = EFCircularSlider;
-			path = "../../../../../Downloads/EFCircularSlider-master 2/EFCircularSlider";
-			sourceTree = "<group>";
-		};
-		468F352F19308F8100D5B82E /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				468F353019308FA600D5B82E /* 222.png */,
-			);
-			name = Images;
+			name = UICircularSlider;
+			path = "../../../../Downloads/UICircularSlider-master/UICircularSlider";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		468F34EF193081F900D5B82E /* Uptosky */ = {
+		46E85F871930962A00DD1FD6 /* Uptosky */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 468F3522193081F900D5B82E /* Build configuration list for PBXNativeTarget "Uptosky" */;
+			buildConfigurationList = 46E85FBA1930962A00DD1FD6 /* Build configuration list for PBXNativeTarget "Uptosky" */;
 			buildPhases = (
-				468F34EC193081F900D5B82E /* Sources */,
-				468F34ED193081F900D5B82E /* Frameworks */,
-				468F34EE193081F900D5B82E /* Resources */,
+				46E85F841930962A00DD1FD6 /* Sources */,
+				46E85F851930962A00DD1FD6 /* Frameworks */,
+				46E85F861930962A00DD1FD6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -204,42 +191,42 @@
 			);
 			name = Uptosky;
 			productName = Uptosky;
-			productReference = 468F34F0193081F900D5B82E /* Uptosky.app */;
+			productReference = 46E85F881930962A00DD1FD6 /* Uptosky.app */;
 			productType = "com.apple.product-type.application";
 		};
-		468F3510193081F900D5B82E /* UptoskyTests */ = {
+		46E85FA81930962A00DD1FD6 /* UptoskyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 468F3525193081F900D5B82E /* Build configuration list for PBXNativeTarget "UptoskyTests" */;
+			buildConfigurationList = 46E85FBD1930962A00DD1FD6 /* Build configuration list for PBXNativeTarget "UptoskyTests" */;
 			buildPhases = (
-				468F350D193081F900D5B82E /* Sources */,
-				468F350E193081F900D5B82E /* Frameworks */,
-				468F350F193081F900D5B82E /* Resources */,
+				46E85FA51930962A00DD1FD6 /* Sources */,
+				46E85FA61930962A00DD1FD6 /* Frameworks */,
+				46E85FA71930962A00DD1FD6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				468F3517193081F900D5B82E /* PBXTargetDependency */,
+				46E85FAF1930962A00DD1FD6 /* PBXTargetDependency */,
 			);
 			name = UptoskyTests;
 			productName = UptoskyTests;
-			productReference = 468F3511193081F900D5B82E /* UptoskyTests.xctest */;
+			productReference = 46E85FA91930962A00DD1FD6 /* UptoskyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		468F34E8193081F900D5B82E /* Project object */ = {
+		46E85F801930962A00DD1FD6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Dimones-dev";
 				TargetAttributes = {
-					468F3510193081F900D5B82E = {
-						TestTargetID = 468F34EF193081F900D5B82E;
+					46E85FA81930962A00DD1FD6 = {
+						TestTargetID = 46E85F871930962A00DD1FD6;
 					};
 				};
 			};
-			buildConfigurationList = 468F34EB193081F900D5B82E /* Build configuration list for PBXProject "Uptosky" */;
+			buildConfigurationList = 46E85F831930962A00DD1FD6 /* Build configuration list for PBXProject "Uptosky" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -247,92 +234,91 @@
 				en,
 				Base,
 			);
-			mainGroup = 468F34E7193081F900D5B82E;
-			productRefGroup = 468F34F1193081F900D5B82E /* Products */;
+			mainGroup = 46E85F7F1930962A00DD1FD6;
+			productRefGroup = 46E85F891930962A00DD1FD6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				468F34EF193081F900D5B82E /* Uptosky */,
-				468F3510193081F900D5B82E /* UptoskyTests */,
+				46E85F871930962A00DD1FD6 /* Uptosky */,
+				46E85FA81930962A00DD1FD6 /* UptoskyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		468F34EE193081F900D5B82E /* Resources */ = {
+		46E85F861930962A00DD1FD6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				468F353119308FA600D5B82E /* 222.png in Resources */,
-				468F350C193081F900D5B82E /* Images.xcassets in Resources */,
-				468F34FE193081F900D5B82E /* InfoPlist.strings in Resources */,
-				468F3507193081F900D5B82E /* Main.storyboard in Resources */,
+				46E85FC1193096A800DD1FD6 /* 222.png in Resources */,
+				46E85FA41930962A00DD1FD6 /* Images.xcassets in Resources */,
+				46E85F961930962A00DD1FD6 /* InfoPlist.strings in Resources */,
+				46E85F9F1930962A00DD1FD6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		468F350F193081F900D5B82E /* Resources */ = {
+		46E85FA71930962A00DD1FD6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				468F351D193081F900D5B82E /* InfoPlist.strings in Resources */,
+				46E85FB51930962A00DD1FD6 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		468F34EC193081F900D5B82E /* Sources */ = {
+		46E85F841930962A00DD1FD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				468F35341930906F00D5B82E /* ForestController.m in Sources */,
-				468F352B19308A6400D5B82E /* EFCircularSlider.m in Sources */,
-				468F350A193081F900D5B82E /* ViewController.m in Sources */,
-				468F3504193081F900D5B82E /* AppDelegate.m in Sources */,
-				468F3500193081F900D5B82E /* main.m in Sources */,
-				468F352E19308D8300D5B82E /* startControllerViewController.m in Sources */,
+				46E85FCE19309F0B00DD1FD6 /* UICircularSlider.m in Sources */,
+				46E85FA21930962A00DD1FD6 /* ViewController.m in Sources */,
+				46E85FC8193097CF00DD1FD6 /* ForestController.m in Sources */,
+				46E85F9C1930962A00DD1FD6 /* AppDelegate.m in Sources */,
+				46E85F981930962A00DD1FD6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		468F350D193081F900D5B82E /* Sources */ = {
+		46E85FA51930962A00DD1FD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				468F351F193081F900D5B82E /* UptoskyTests.m in Sources */,
+				46E85FB71930962A00DD1FD6 /* UptoskyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		468F3517193081F900D5B82E /* PBXTargetDependency */ = {
+		46E85FAF1930962A00DD1FD6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 468F34EF193081F900D5B82E /* Uptosky */;
-			targetProxy = 468F3516193081F900D5B82E /* PBXContainerItemProxy */;
+			target = 46E85F871930962A00DD1FD6 /* Uptosky */;
+			targetProxy = 46E85FAE1930962A00DD1FD6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		468F34FC193081F900D5B82E /* InfoPlist.strings */ = {
+		46E85F941930962A00DD1FD6 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				468F34FD193081F900D5B82E /* en */,
+				46E85F951930962A00DD1FD6 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		468F3505193081F900D5B82E /* Main.storyboard */ = {
+		46E85F9D1930962A00DD1FD6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				468F3506193081F900D5B82E /* Base */,
+				46E85F9E1930962A00DD1FD6 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		468F351B193081F900D5B82E /* InfoPlist.strings */ = {
+		46E85FB31930962A00DD1FD6 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				468F351C193081F900D5B82E /* en */,
+				46E85FB41930962A00DD1FD6 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -340,7 +326,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		468F3520193081F900D5B82E /* Debug */ = {
+		46E85FB81930962A00DD1FD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -378,7 +364,7 @@
 			};
 			name = Debug;
 		};
-		468F3521193081F900D5B82E /* Release */ = {
+		46E85FB91930962A00DD1FD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -410,11 +396,12 @@
 			};
 			name = Release;
 		};
-		468F3523193081F900D5B82E /* Debug */ = {
+		46E85FBB1930962A00DD1FD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Uptosky/Uptosky-Prefix.pch";
 				INFOPLIST_FILE = "Uptosky/Uptosky-Info.plist";
@@ -423,11 +410,12 @@
 			};
 			name = Debug;
 		};
-		468F3524193081F900D5B82E /* Release */ = {
+		46E85FBC1930962A00DD1FD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Uptosky/Uptosky-Prefix.pch";
 				INFOPLIST_FILE = "Uptosky/Uptosky-Info.plist";
@@ -436,7 +424,7 @@
 			};
 			name = Release;
 		};
-		468F3526193081F900D5B82E /* Debug */ = {
+		46E85FBE1930962A00DD1FD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Uptosky.app/Uptosky";
@@ -458,7 +446,7 @@
 			};
 			name = Debug;
 		};
-		468F3527193081F900D5B82E /* Release */ = {
+		46E85FBF1930962A00DD1FD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Uptosky.app/Uptosky";
@@ -479,34 +467,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		468F34EB193081F900D5B82E /* Build configuration list for PBXProject "Uptosky" */ = {
+		46E85F831930962A00DD1FD6 /* Build configuration list for PBXProject "Uptosky" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				468F3520193081F900D5B82E /* Debug */,
-				468F3521193081F900D5B82E /* Release */,
+				46E85FB81930962A00DD1FD6 /* Debug */,
+				46E85FB91930962A00DD1FD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		468F3522193081F900D5B82E /* Build configuration list for PBXNativeTarget "Uptosky" */ = {
+		46E85FBA1930962A00DD1FD6 /* Build configuration list for PBXNativeTarget "Uptosky" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				468F3523193081F900D5B82E /* Debug */,
-				468F3524193081F900D5B82E /* Release */,
+				46E85FBB1930962A00DD1FD6 /* Debug */,
+				46E85FBC1930962A00DD1FD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		468F3525193081F900D5B82E /* Build configuration list for PBXNativeTarget "UptoskyTests" */ = {
+		46E85FBD1930962A00DD1FD6 /* Build configuration list for PBXNativeTarget "UptoskyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				468F3526193081F900D5B82E /* Debug */,
-				468F3527193081F900D5B82E /* Release */,
+				46E85FBE1930962A00DD1FD6 /* Debug */,
+				46E85FBF1930962A00DD1FD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 468F34E8193081F900D5B82E /* Project object */;
+	rootObject = 46E85F801930962A00DD1FD6 /* Project object */;
 }
