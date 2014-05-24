@@ -9,10 +9,19 @@
 #import "settViewController.h"
 
 @interface settViewController ()
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *refreshIndicator;
 
 @end
 
 @implementation settViewController
+{
+    NSArray *first;
+    NSArray *second;
+    NSMutableArray *items;
+}
+- (IBAction)refresh:(id)sender {
+}
+@synthesize refreshIndicator;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +36,59 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSString* path = @"http://download.trigen.pro/uptosky/uptosky.json";
+    NSURL *theURL = [NSURL URLWithString:path];
+    NSError *error = nil;
+    NSString *theJSON = [NSString stringWithContentsOfURL:theURL encoding:NSUTF8StringEncoding error:&error];
+    NSLog(@"%@",theJSON);
+    NSData *allCoursesData = [[NSData alloc] initWithContentsOfURL:
+                              [NSURL URLWithString:@"http://download.trigen.pro/uptosky/uptosky.json"]];
+    
+    
+    NSMutableDictionary *allCourses = [NSJSONSerialization
+                                       JSONObjectWithData:allCoursesData
+                                       options:NSJSONReadingMutableContainers
+                                       error:&error];
+    first = allCourses[@"1"];
+    second = allCourses[@"2"];
+    [items init];
+    /* shit code begin*/
+    [items addObject:[first valueForKey:@"name"]];
+    [items addObject:[second valueForKey:@"name"]];
+
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"TEST DID ROW SELECT");
+}
+
+
+
+/*UITableView custom*/
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return items.count;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+  //  NSDictionary *item = (NSDictionary *)[self.content objectAtIndex:indexPath.row];
+   // cell.textLabel.text = [item objectForKey:@"mainTitleKey"];
+    //cell.detailTextLabel.text = [item objectForKey:@"secondaryTitleKey"];
+    //NSString *path = [[NSBundle mainBundle] pathForResource:[item objectForKey:@"imageKey"] ofType:@"png"];
+    //UIImage *theImage = [UIImage imageWithContentsOfFile:path];
+    //cell.imageView.image = theImage;
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning

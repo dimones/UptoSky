@@ -45,6 +45,7 @@
 		46EA825E1930DE1D00B23014 /* BUTTONFOREST.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EA825D1930DE1D00B23014 /* BUTTONFOREST.png */; };
 		46EA82611930E35F00B23014 /* BACKGROUND.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EA825F1930E35F00B23014 /* BACKGROUND.png */; };
 		46EA82621930E35F00B23014 /* BACKGROUND2.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EA82601930E35F00B23014 /* BACKGROUND2.png */; };
+		46EA82651930F7C600B23014 /* previewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EA82641930F7C600B23014 /* previewCell.m */; };
 		A58A92513297403D8DE1743E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C55A353BC7444A84935DDAAC /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +107,8 @@
 		46EA825D1930DE1D00B23014 /* BUTTONFOREST.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BUTTONFOREST.png; path = Images/BUTTONFOREST.png; sourceTree = "<group>"; };
 		46EA825F1930E35F00B23014 /* BACKGROUND.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BACKGROUND.png; path = Images/BACKGROUND.png; sourceTree = "<group>"; };
 		46EA82601930E35F00B23014 /* BACKGROUND2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BACKGROUND2.png; path = Images/BACKGROUND2.png; sourceTree = "<group>"; };
+		46EA82631930F7C600B23014 /* previewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = previewCell.h; sourceTree = "<group>"; };
+		46EA82641930F7C600B23014 /* previewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = previewCell.m; sourceTree = "<group>"; };
 		C55A353BC7444A84935DDAAC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -200,6 +203,8 @@
 				46E85FC7193097CF00DD1FD6 /* ForestController.m */,
 				46E85FEF1930C97900DD1FD6 /* settViewController.h */,
 				46E85FF01930C97900DD1FD6 /* settViewController.m */,
+				46EA82631930F7C600B23014 /* previewCell.h */,
+				46EA82641930F7C600B23014 /* previewCell.m */,
 			);
 			path = Uptosky;
 			sourceTree = "<group>";
@@ -418,6 +423,7 @@
 				46E85FCE19309F0B00DD1FD6 /* UICircularSlider.m in Sources */,
 				46E85FA21930962A00DD1FD6 /* ViewController.m in Sources */,
 				46E85FC8193097CF00DD1FD6 /* ForestController.m in Sources */,
+				46EA82651930F7C600B23014 /* previewCell.m in Sources */,
 				46E85F9C1930962A00DD1FD6 /* AppDelegate.m in Sources */,
 				46E85F981930962A00DD1FD6 /* main.m in Sources */,
 			);

@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <JSONKit.h>
+#import "previewCell.h"
 
 @interface settViewController : UIViewController
 
