@@ -27,14 +27,12 @@
 		46E85FD01930A71200DD1FD6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E85FCF1930A71200DD1FD6 /* AVFoundation.framework */; };
 		46E85FD61930AB6F00DD1FD6 /* TEST.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 46E85FD51930AB6F00DD1FD6 /* TEST.mp3 */; };
 		46E85FD81930B4B600DD1FD6 /* WIND.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 46E85FD71930B4B600DD1FD6 /* WIND.mp3 */; };
-		46E85FDB1930B7E700DD1FD6 /* startViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E85FDA1930B7E700DD1FD6 /* startViewController.m */; };
 		46E85FE11930B9AC00DD1FD6 /* parks-32-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 46E85FE01930B9AC00DD1FD6 /* parks-32-32.png */; };
 		46E85FE31930B9B500DD1FD6 /* city-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 46E85FE21930B9B500DD1FD6 /* city-32.png */; };
 		46E85FE61930BA1D00DD1FD6 /* city-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 46E85FE41930BA1D00DD1FD6 /* city-64.png */; };
 		46E85FE71930BA1D00DD1FD6 /* parks-32-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 46E85FE51930BA1D00DD1FD6 /* parks-32-64.png */; };
 		46E85FEA1930BB8000DD1FD6 /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E85FE81930BB8000DD1FD6 /* F.wav */; };
 		46E85FEB1930BB8000DD1FD6 /* W.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E85FE91930BB8000DD1FD6 /* W.wav */; };
-		46E85FEE1930BBEC00DD1FD6 /* cityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E85FED1930BBEC00DD1FD6 /* cityViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,16 +73,12 @@
 		46E85FCF1930A71200DD1FD6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		46E85FD51930AB6F00DD1FD6 /* TEST.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = TEST.mp3; path = ../../../TEST.mp3; sourceTree = "<group>"; };
 		46E85FD71930B4B600DD1FD6 /* WIND.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = WIND.mp3; path = Sounds/WIND.mp3; sourceTree = "<group>"; };
-		46E85FD91930B7E700DD1FD6 /* startViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = startViewController.h; sourceTree = "<group>"; };
-		46E85FDA1930B7E700DD1FD6 /* startViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = startViewController.m; sourceTree = "<group>"; };
 		46E85FE01930B9AC00DD1FD6 /* parks-32-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "parks-32-32.png"; path = "../../../../Downloads/parks-32-32.png"; sourceTree = "<group>"; };
 		46E85FE21930B9B500DD1FD6 /* city-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "city-32.png"; path = "../../../../Downloads/city-32.png"; sourceTree = "<group>"; };
 		46E85FE41930BA1D00DD1FD6 /* city-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "city-64.png"; path = "../../../../Downloads/city-64.png"; sourceTree = "<group>"; };
 		46E85FE51930BA1D00DD1FD6 /* parks-32-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "parks-32-64.png"; path = "../../../../Downloads/parks-32-64.png"; sourceTree = "<group>"; };
 		46E85FE81930BB8000DD1FD6 /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = F.wav; path = Sounds/F.wav; sourceTree = "<group>"; };
 		46E85FE91930BB8000DD1FD6 /* W.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = W.wav; path = Sounds/W.wav; sourceTree = "<group>"; };
-		46E85FEC1930BBEC00DD1FD6 /* cityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cityViewController.h; sourceTree = "<group>"; };
-		46E85FED1930BBEC00DD1FD6 /* cityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cityViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,10 +159,6 @@
 				46E85F921930962A00DD1FD6 /* Supporting Files */,
 				46E85FC6193097CF00DD1FD6 /* ForestController.h */,
 				46E85FC7193097CF00DD1FD6 /* ForestController.m */,
-				46E85FD91930B7E700DD1FD6 /* startViewController.h */,
-				46E85FDA1930B7E700DD1FD6 /* startViewController.m */,
-				46E85FEC1930BBEC00DD1FD6 /* cityViewController.h */,
-				46E85FED1930BBEC00DD1FD6 /* cityViewController.m */,
 			);
 			path = Uptosky;
 			sourceTree = "<group>";
@@ -321,8 +311,6 @@
 				46E85FCE19309F0B00DD1FD6 /* UICircularSlider.m in Sources */,
 				46E85FA21930962A00DD1FD6 /* ViewController.m in Sources */,
 				46E85FC8193097CF00DD1FD6 /* ForestController.m in Sources */,
-				46E85FDB1930B7E700DD1FD6 /* startViewController.m in Sources */,
-				46E85FEE1930BBEC00DD1FD6 /* cityViewController.m in Sources */,
 				46E85F9C1930962A00DD1FD6 /* AppDelegate.m in Sources */,
 				46E85F981930962A00DD1FD6 /* main.m in Sources */,
 			);
