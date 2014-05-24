@@ -10,6 +10,7 @@
 #import <JSONKit.h>
 #import "previewCell.h"
 
-@interface settViewController : UIViewController
+@interface settViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *table;
 
 @end

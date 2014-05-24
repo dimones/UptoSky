@@ -7,8 +7,11 @@
 //
 
 #import "settViewController.h"
+#import "previewCell.h"
 
 @interface settViewController ()
+@property (weak, nonatomic) IBOutlet UIPickerView *picker;
+
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *refreshIndicator;
 
 @end
@@ -17,12 +20,14 @@
 {
     NSArray *first;
     NSArray *second;
-    NSMutableArray *items;
+    NSMutableArray *itemsName;
+    NSMutableArray *itemsComment;
 }
 - (IBAction)refresh:(id)sender {
 }
 @synthesize refreshIndicator;
-
+@synthesize table;
+@synthesize picker;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -51,45 +56,15 @@
                                        error:&error];
     first = allCourses[@"1"];
     second = allCourses[@"2"];
-    [items init];
     /* shit code begin*/
-    [items addObject:[first valueForKey:@"name"]];
-    [items addObject:[second valueForKey:@"name"]];
-
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"TEST DID ROW SELECT");
-}
-
-
-
-/*UITableView custom*/
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Return the number of sections.
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return items.count;
+    itemsName = [[NSMutableArray alloc] initWithObjects:nil]; itemsComment = [[NSMutableArray alloc] initWithObjects:nil];
+    [itemsName addObject:@"natural"];
+    [itemsName addObject:@"city"];
+    //[itemsComment addObject:[first valueForKey:@"comment"]];
+    //[itemsComment addObject:[second valueForKey:@"comment"]];
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    }
-  //  NSDictionary *item = (NSDictionary *)[self.content objectAtIndex:indexPath.row];
-   // cell.textLabel.text = [item objectForKey:@"mainTitleKey"];
-    //cell.detailTextLabel.text = [item objectForKey:@"secondaryTitleKey"];
-    //NSString *path = [[NSBundle mainBundle] pathForResource:[item objectForKey:@"imageKey"] ofType:@"png"];
-    //UIImage *theImage = [UIImage imageWithContentsOfFile:path];
-    //cell.imageView.image = theImage;
-    return cell;
-}
 
 - (void)didReceiveMemoryWarning
 {

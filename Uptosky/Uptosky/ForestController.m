@@ -70,9 +70,6 @@
     [self.slider_5 addTarget:self action:@selector(updateProgress5:) forControlEvents:UIControlEventValueChanged];
     [self.slider_6 addTarget:self action:@selector(updateProgress6:) forControlEvents:UIControlEventValueChanged];
     self.slider_1.value =self.slider_2.value = self.slider_3.value = self.slider_4.value = self.slider_5.value = self.slider_6.value = 0.5f;
-    [[AVAudioSession sharedInstance] setActive:YES error:NULL];
-    [[AVAudioSession sharedInstance] setDelegate:self];
-    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:NULL];
 
 }
 - (IBAction)play1:(id)sender {
@@ -218,6 +215,14 @@
         player5.currentTime = 0;
         player5.volume = self.slider_6.value;
     }
+}
+- (IBAction)stopAll:(id)sender {
+    [player stop];
+    [player1 stop];
+    [player2 stop];
+    [player3 stop];
+    [player4 stop];
+    [player5 stop];
 }
 
 - (void)initPlayers
