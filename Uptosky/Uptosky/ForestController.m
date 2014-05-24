@@ -10,18 +10,24 @@
 #import "UICircularSlider.h"
 
 @interface ForestController ()
+{
+    AVAudioPlayer *player;
+    AVAudioPlayer *player1;
+}
 @property (weak, nonatomic) IBOutlet UICircularSlider *slider_2;
 @property (weak, nonatomic) IBOutlet UICircularSlider *slider_3;
 @property (weak, nonatomic) IBOutlet UICircularSlider *slider_4;
 @property (weak, nonatomic) IBOutlet UICircularSlider *slider_5;
 @property (weak, nonatomic) IBOutlet UICircularSlider *slider_6;
 @property (weak, nonatomic) IBOutlet UICircularSlider *slider_1;
+@property (nonatomic, retain) AVAudioPlayer *player;
+@property (nonatomic, retain) AVAudioPlayer *player1;
 @end
 
-@implementation ForestController
-{
-
+@implementation ForestController{
+    
 }
+
 @synthesize slider_1 = _slider_1;
 @synthesize slider_2 = _slider_2;
 @synthesize slider_3 = _slider_3;
@@ -42,7 +48,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-     self.view.backgroundColor = [UIColor colorWithRed:31/255.0f green:61/255.0f blue:91/255.0f alpha:1.0f];
     /*Init Sliders*/
     [self.slider_1 addTarget:self action:@selector(updateProgress1:) forControlEvents:UIControlEventValueChanged];
     [self.slider_2 addTarget:self action:@selector(updateProgress2:) forControlEvents:UIControlEventValueChanged];
@@ -50,7 +55,8 @@
     [self.slider_4 addTarget:self action:@selector(updateProgress4:) forControlEvents:UIControlEventValueChanged];
     [self.slider_5 addTarget:self action:@selector(updateProgress5:) forControlEvents:UIControlEventValueChanged];
     [self.slider_6 addTarget:self action:@selector(updateProgress6:) forControlEvents:UIControlEventValueChanged];
-
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [[AVAudioSession sharedInstance] setActive: YES error: nil];
     
     /*
      CGRect minuteSliderFrame = CGRectMake(5, 170, 310, 310);
@@ -81,7 +87,7 @@
     [self.view addSubview:circularSlider];
     [circularSlider setCurrentValue:10.0f];*/
     
-
+    
     
     
     
@@ -94,6 +100,59 @@
     // Do any additional setup after loading the view.
 
 }
+- (IBAction)play1:(id)sender {
+    NSString* resourcePath = [[NSBundle mainBundle] resourcePath];
+    resourcePath = [resourcePath stringByAppendingString:@"/WIND.mp3"];
+    NSLog(@"Path to play: %@", resourcePath);
+    NSError* err;
+    
+    //Initialize our player pointing to the path to our resource
+    player = [[AVAudioPlayer alloc] initWithContentsOfURL:
+              [NSURL fileURLWithPath:resourcePath] error:&err];
+    
+    if( err ){
+        //bail!
+        NSLog(@"Failed with reason: %@", [err localizedDescription]);
+    }
+    else{
+        //set our delegate and begin playback
+        player.delegate = self;
+        [player play];
+        player.numberOfLoops = -1;
+        player.currentTime = 0;
+        player.volume = 1.0;
+    }
+    
+}
+- (IBAction)play2:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"PLAY 2" object:self];
+    NSString* resourcePath = [[NSBundle mainBundle] resourcePath];
+    resourcePath = [resourcePath stringByAppendingString:@"/TEST.mp3"];
+    NSLog(@"Path to play: %@", resourcePath);
+    NSError* err;
+    
+    //Initialize our player pointing to the path to our resource
+    player1 = [[AVAudioPlayer alloc] initWithContentsOfURL:
+              [NSURL fileURLWithPath:resourcePath] error:&err];
+    
+    if( err ){
+        //bail!
+        NSLog(@"Failed with reason: %@", [err localizedDescription]);
+    }
+    else{
+        //set our delegate and begin playback
+        player1.delegate = self;
+        [player1 play];
+        player1.numberOfLoops = -1;
+        player1.currentTime = 0;
+        player1.volume = 1.0;
+    }
+}
+
+- (void)initPlayers
+{
+    
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -102,8 +161,14 @@
 }
 
 - (IBAction)updateProgress1:(UISlider *)sender {
+    float progress = translateValueFromSourceIntervalToDestinationInterval(sender.value, sender.minimumValue, sender.maximumValue, 0.0, 1.0);
+    NSLog(@"%f 111    ",progress);
+    [player setVolume:progress];
 }
 - (IBAction)updateProgress2:(UISlider *)sender {
+    float progress = translateValueFromSourceIntervalToDestinationInterval(sender.value, sender.minimumValue, sender.maximumValue, 0.0, 1.0);
+    NSLog(@"%f 222    ",progress);
+    [player1 setVolume:progress];
 }
 - (IBAction)updateProgress3:(UISlider *)sender {
 }

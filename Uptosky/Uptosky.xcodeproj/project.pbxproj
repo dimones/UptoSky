@@ -24,6 +24,9 @@
 		46E85FC1193096A800DD1FD6 /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = 46E85FC0193096A800DD1FD6 /* 222.png */; };
 		46E85FC8193097CF00DD1FD6 /* ForestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E85FC7193097CF00DD1FD6 /* ForestController.m */; };
 		46E85FCE19309F0B00DD1FD6 /* UICircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E85FCC19309F0B00DD1FD6 /* UICircularSlider.m */; };
+		46E85FD01930A71200DD1FD6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E85FCF1930A71200DD1FD6 /* AVFoundation.framework */; };
+		46E85FD41930A89700DD1FD6 /* WIND.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 46E85FD31930A89700DD1FD6 /* WIND.mp3 */; };
+		46E85FD61930AB6F00DD1FD6 /* TEST.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 46E85FD51930AB6F00DD1FD6 /* TEST.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		46E85FC7193097CF00DD1FD6 /* ForestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForestController.m; sourceTree = "<group>"; };
 		46E85FCB19309F0B00DD1FD6 /* UICircularSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICircularSlider.h; sourceTree = "<group>"; };
 		46E85FCC19309F0B00DD1FD6 /* UICircularSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICircularSlider.m; sourceTree = "<group>"; };
+		46E85FCF1930A71200DD1FD6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		46E85FD31930A89700DD1FD6 /* WIND.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WIND.mp3; sourceTree = "<group>"; };
+		46E85FD51930AB6F00DD1FD6 /* TEST.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = TEST.mp3; path = ../../../TEST.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E85FD01930A71200DD1FD6 /* AVFoundation.framework in Frameworks */,
 				46E85F8E1930962A00DD1FD6 /* CoreGraphics.framework in Frameworks */,
 				46E85F901930962A00DD1FD6 /* UIKit.framework in Frameworks */,
 				46E85F8C1930962A00DD1FD6 /* Foundation.framework in Frameworks */,
@@ -109,6 +116,7 @@
 		46E85F8A1930962A00DD1FD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				46E85FCF1930A71200DD1FD6 /* AVFoundation.framework */,
 				46E85F8B1930962A00DD1FD6 /* Foundation.framework */,
 				46E85F8D1930962A00DD1FD6 /* CoreGraphics.framework */,
 				46E85F8F1930962A00DD1FD6 /* UIKit.framework */,
@@ -120,6 +128,8 @@
 		46E85F911930962A00DD1FD6 /* Uptosky */ = {
 			isa = PBXGroup;
 			children = (
+				46E85FD51930AB6F00DD1FD6 /* TEST.mp3 */,
+				46E85FD31930A89700DD1FD6 /* WIND.mp3 */,
 				46E85FC919309F0B00DD1FD6 /* UICircularSlider */,
 				46E85FC0193096A800DD1FD6 /* 222.png */,
 				46E85F9A1930962A00DD1FD6 /* AppDelegate.h */,
@@ -250,8 +260,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E85FD61930AB6F00DD1FD6 /* TEST.mp3 in Resources */,
 				46E85FC1193096A800DD1FD6 /* 222.png in Resources */,
 				46E85FA41930962A00DD1FD6 /* Images.xcassets in Resources */,
+				46E85FD41930A89700DD1FD6 /* WIND.mp3 in Resources */,
 				46E85F961930962A00DD1FD6 /* InfoPlist.strings in Resources */,
 				46E85F9F1930962A00DD1FD6 /* Main.storyboard in Resources */,
 			);
