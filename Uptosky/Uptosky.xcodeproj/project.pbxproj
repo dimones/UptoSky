@@ -42,6 +42,10 @@
 		46E860051930D3B600DD1FD6 /* Fo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E860001930D3B600DD1FD6 /* Fo.wav */; };
 		46E860061930D3B600DD1FD6 /* N.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E860011930D3B600DD1FD6 /* N.wav */; };
 		46E860071930D3B600DD1FD6 /* R.wav in Resources */ = {isa = PBXBuildFile; fileRef = 46E860021930D3B600DD1FD6 /* R.wav */; };
+		46EA825E1930DE1D00B23014 /* BUTTONFOREST.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EA825D1930DE1D00B23014 /* BUTTONFOREST.png */; };
+		46EA82611930E35F00B23014 /* BACKGROUND.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EA825F1930E35F00B23014 /* BACKGROUND.png */; };
+		46EA82621930E35F00B23014 /* BACKGROUND2.png in Resources */ = {isa = PBXBuildFile; fileRef = 46EA82601930E35F00B23014 /* BACKGROUND2.png */; };
+		A58A92513297403D8DE1743E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C55A353BC7444A84935DDAAC /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06979014B6A048B18132C400 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		46E85F881930962A00DD1FD6 /* Uptosky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uptosky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E85F8B1930962A00DD1FD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		46E85F8D1930962A00DD1FD6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,6 +103,10 @@
 		46E860001930D3B600DD1FD6 /* Fo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Fo.wav; path = Sounds/Fo.wav; sourceTree = "<group>"; };
 		46E860011930D3B600DD1FD6 /* N.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = N.wav; path = Sounds/N.wav; sourceTree = "<group>"; };
 		46E860021930D3B600DD1FD6 /* R.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = R.wav; path = Sounds/R.wav; sourceTree = "<group>"; };
+		46EA825D1930DE1D00B23014 /* BUTTONFOREST.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BUTTONFOREST.png; path = Images/BUTTONFOREST.png; sourceTree = "<group>"; };
+		46EA825F1930E35F00B23014 /* BACKGROUND.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BACKGROUND.png; path = Images/BACKGROUND.png; sourceTree = "<group>"; };
+		46EA82601930E35F00B23014 /* BACKGROUND2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BACKGROUND2.png; path = Images/BACKGROUND2.png; sourceTree = "<group>"; };
+		C55A353BC7444A84935DDAAC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +118,7 @@
 				46E85F8E1930962A00DD1FD6 /* CoreGraphics.framework in Frameworks */,
 				46E85F901930962A00DD1FD6 /* UIKit.framework in Frameworks */,
 				46E85F8C1930962A00DD1FD6 /* Foundation.framework in Frameworks */,
+				A58A92513297403D8DE1743E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +142,7 @@
 				46E85FB01930962A00DD1FD6 /* UptoskyTests */,
 				46E85F8A1930962A00DD1FD6 /* Frameworks */,
 				46E85F891930962A00DD1FD6 /* Products */,
+				06979014B6A048B18132C400 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +163,7 @@
 				46E85F8D1930962A00DD1FD6 /* CoreGraphics.framework */,
 				46E85F8F1930962A00DD1FD6 /* UIKit.framework */,
 				46E85FAA1930962A00DD1FD6 /* XCTest.framework */,
+				C55A353BC7444A84935DDAAC /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,6 +171,9 @@
 		46E85F911930962A00DD1FD6 /* Uptosky */ = {
 			isa = PBXGroup;
 			children = (
+				46EA825F1930E35F00B23014 /* BACKGROUND.png */,
+				46EA82601930E35F00B23014 /* BACKGROUND2.png */,
+				46EA825D1930DE1D00B23014 /* BUTTONFOREST.png */,
 				46E85FFE1930D3B600DD1FD6 /* B.wav */,
 				46E85FFF1930D3B600DD1FD6 /* Fi.wav */,
 				46E860001930D3B600DD1FD6 /* Fo.wav */,
@@ -254,9 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46E85FBA1930962A00DD1FD6 /* Build configuration list for PBXNativeTarget "Uptosky" */;
 			buildPhases = (
+				7EEAEF3F9DF04FE4B404AC14 /* Check Pods Manifest.lock */,
 				46E85F841930962A00DD1FD6 /* Sources */,
 				46E85F851930962A00DD1FD6 /* Frameworks */,
 				46E85F861930962A00DD1FD6 /* Resources */,
+				2E8E83ED83B34529BB173BBA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -328,6 +345,7 @@
 				46E85FF91930CB6D00DD1FD6 /* 1400952953_editor_setting_gear_.png in Resources */,
 				46E860031930D3B600DD1FD6 /* B.wav in Resources */,
 				46E85FE71930BA1D00DD1FD6 /* parks-32-64.png in Resources */,
+				46EA82611930E35F00B23014 /* BACKGROUND.png in Resources */,
 				46E85FEA1930BB8000DD1FD6 /* F.wav in Resources */,
 				46E85FE61930BA1D00DD1FD6 /* city-64.png in Resources */,
 				46E85FC1193096A800DD1FD6 /* 222.png in Resources */,
@@ -340,8 +358,10 @@
 				46E85FFB1930CB6D00DD1FD6 /* city-512.png in Resources */,
 				46E85F9F1930962A00DD1FD6 /* Main.storyboard in Resources */,
 				46E860051930D3B600DD1FD6 /* Fo.wav in Resources */,
+				46EA82621930E35F00B23014 /* BACKGROUND2.png in Resources */,
 				46E85FFC1930CB6D00DD1FD6 /* parks-32-512.png in Resources */,
 				46E85FE11930B9AC00DD1FD6 /* parks-32-32.png in Resources */,
+				46EA825E1930DE1D00B23014 /* BUTTONFOREST.png in Resources */,
 				46E860071930D3B600DD1FD6 /* R.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +375,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E8E83ED83B34529BB173BBA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EEAEF3F9DF04FE4B404AC14 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46E85F841930962A00DD1FD6 /* Sources */ = {
@@ -488,6 +541,7 @@
 		};
 		46E85FBB1930962A00DD1FD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06979014B6A048B18132C400 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -502,6 +556,7 @@
 		};
 		46E85FBC1930962A00DD1FD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06979014B6A048B18132C400 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -573,6 +628,7 @@
 				46E85FBC1930962A00DD1FD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46E85FBD1930962A00DD1FD6 /* Build configuration list for PBXNativeTarget "UptoskyTests" */ = {
 			isa = XCConfigurationList;
@@ -581,6 +637,7 @@
 				46E85FBF1930962A00DD1FD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
