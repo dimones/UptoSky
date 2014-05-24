@@ -73,7 +73,7 @@
                                     <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LK2-FM-g3V">
                                         <rect key="frame" x="10" y="10" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="4" image="NATURE.png"/>
+                                        <state key="normal" image="NATURE.png"/>
                                         <connections>
                                             <action selector="play4:" destination="ocP-ok-Poj" eventType="touchUpInside" id="G8D-sA-TGm"/>
                                         </connections>
@@ -85,7 +85,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbq-rY-lCa">
-                                        <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                        <rect key="frame" x="15" y="15" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="5" image="RIVER.png"/>
                                         <connections>
@@ -145,7 +145,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Natural" image="parks-32-64.png" id="x4n-tr-d8Q">
+                    <tabBarItem key="tabBarItem" title="Natural" image="NATURE.png" id="x4n-tr-d8Q">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-1"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="QFA-Y2-c92"/>
@@ -375,7 +375,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="City" image="city-32.png" id="Crd-iz-7PT">
+                    <tabBarItem key="tabBarItem" title="City" image="CITY.png" id="Crd-iz-7PT">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-1"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="rFB-xF-SWk"/>
@@ -484,17 +484,16 @@
         <image name="BACKGROUNDOPTION.png" width="1080" height="1920"/>
         <image name="BRIZZ.png" width="512" height="512"/>
         <image name="BUTTONFOREST.png" width="140" height="140"/>
+        <image name="CITY.png" width="32" height="32"/>
         <image name="FIRE.png" width="512" height="512"/>
         <image name="FIREWORKS.png" width="512" height="512"/>
         <image name="MARKET.png" width="512" height="411"/>
         <image name="METRO.png" width="512" height="512"/>
-        <image name="NATURE.png" width="512" height="512"/>
+        <image name="NATURE.png" width="32" height="32"/>
         <image name="RAINWITHENERGY.png" width="512" height="512"/>
         <image name="RIVER.png" width="512" height="512"/>
         <image name="STREET.png" width="512" height="512"/>
         <image name="WIND.png" width="512" height="512"/>
-        <image name="city-32.png" width="32" height="32"/>
-        <image name="parks-32-64.png" width="64" height="64"/>
         <image name="plane.png" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -505,7 +504,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="cLG-MD-gfH"/>
         <segue reference="yR9-az-lUu"/>
-        <segue reference="CTU-Sx-R5P"/>
+        <segue reference="TXd-OA-nkN"/>
         <segue reference="jin-sz-OsD"/>
     </inferredMetricsTieBreakers>
 </document>
