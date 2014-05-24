@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7D2D0558-657B-49D6-984F-976845A9FF76</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Uptosky</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D26F246A-60E5-4325-8452-0127A0A198CA</key>
+		<string>https://github.com/dimones/DimonesLabs.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Projects/Uptosky/Uptosky.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D26F246A-60E5-4325-8452-0127A0A198CA</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/dimones/DimonesLabs.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D26F246A-60E5-4325-8452-0127A0A198CA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D26F246A-60E5-4325-8452-0127A0A198CA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Uptosky</string>
+		</dict>
+	</array>
+</dict>
+</plist>
