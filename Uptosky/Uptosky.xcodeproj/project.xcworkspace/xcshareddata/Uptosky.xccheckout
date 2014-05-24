@@ -12,6 +12,8 @@
 	<dict>
 		<key>D26F246A-60E5-4325-8452-0127A0A198CA</key>
 		<string>https://github.com/dimones/DimonesLabs.git</string>
+		<key>D30CA168-8D43-440F-A936-FB39E64E4C8F</key>
+		<string>https://github.com/dimones/Simple-Emotions.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Projects/Uptosky/Uptosky.xcodeproj/project.xcworkspace</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>D26F246A-60E5-4325-8452-0127A0A198CA</key>
 		<string>../../../..</string>
+		<key>D30CA168-8D43-440F-A936-FB39E64E4C8F</key>
+		<string>../../../../../Simple-Emotions</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/dimones/DimonesLabs.git</string>
@@ -28,6 +32,14 @@
 	<string>D26F246A-60E5-4325-8452-0127A0A198CA</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D30CA168-8D43-440F-A936-FB39E64E4C8F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Simple-Emotions</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

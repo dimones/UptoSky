@@ -32,10 +32,10 @@
             </objects>
             <point key="canvasLocation" x="777" y="-273"/>
         </scene>
-        <!--View Controller-->
+        <!--Start Controller View Controller-->
         <scene sceneID="N5W-gA-h8j">
             <objects>
-                <viewController id="naw-2F-G58" sceneMemberID="viewController">
+                <viewController id="naw-2F-G58" customClass="startControllerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6g9-jn-jMy"/>
                         <viewControllerLayoutGuide type="bottom" id="c2H-cP-KsW"/>
@@ -57,14 +57,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="24 мая 2014, суббота" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="176" translatesAutoresizingMaskIntoConstraints="NO" id="7I4-3S-UCg">
-                                <rect key="frame" x="72" y="239" width="176" height="40"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="24 мая 2014, суббота" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="133" translatesAutoresizingMaskIntoConstraints="NO" id="7I4-3S-UCg">
+                                <rect key="frame" x="94" y="234" width="133" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="приятного отдыха" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="148" translatesAutoresizingMaskIntoConstraints="NO" id="2dt-c8-gwj">
-                                <rect key="frame" x="86" y="309" width="148" height="40"/>
+                                <rect key="frame" x="86" y="282" width="148" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -82,6 +82,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="curDate" destination="7I4-3S-UCg" id="ox0-vw-PyQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BFM-jq-Chc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

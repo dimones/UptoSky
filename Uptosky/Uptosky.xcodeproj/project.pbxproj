@@ -22,6 +22,9 @@
 		468F351D193081F900D5B82E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 468F351B193081F900D5B82E /* InfoPlist.strings */; };
 		468F351F193081F900D5B82E /* UptoskyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 468F351E193081F900D5B82E /* UptoskyTests.m */; };
 		468F352B19308A6400D5B82E /* EFCircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 468F352A19308A6400D5B82E /* EFCircularSlider.m */; };
+		468F352E19308D8300D5B82E /* startControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468F352D19308D8300D5B82E /* startControllerViewController.m */; };
+		468F353119308FA600D5B82E /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = 468F353019308FA600D5B82E /* 222.png */; };
+		468F35341930906F00D5B82E /* ForestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468F35331930906F00D5B82E /* ForestController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,11 @@
 		468F351E193081F900D5B82E /* UptoskyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UptoskyTests.m; sourceTree = "<group>"; };
 		468F352919308A6400D5B82E /* EFCircularSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCircularSlider.h; sourceTree = "<group>"; };
 		468F352A19308A6400D5B82E /* EFCircularSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCircularSlider.m; sourceTree = "<group>"; };
+		468F352C19308D8300D5B82E /* startControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = startControllerViewController.h; sourceTree = "<group>"; };
+		468F352D19308D8300D5B82E /* startControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = startControllerViewController.m; sourceTree = "<group>"; };
+		468F353019308FA600D5B82E /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 222.png; path = "../../../../Simple-Emotions/Uptosky/Uptosky/222.png"; sourceTree = "<group>"; };
+		468F35321930906F00D5B82E /* ForestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForestController.h; sourceTree = "<group>"; };
+		468F35331930906F00D5B82E /* ForestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForestController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,7 @@
 		468F34F9193081F900D5B82E /* Uptosky */ = {
 			isa = PBXGroup;
 			children = (
+				468F352F19308F8100D5B82E /* Images */,
 				468F352819308A6400D5B82E /* EFCircularSlider */,
 				468F3502193081F900D5B82E /* AppDelegate.h */,
 				468F3503193081F900D5B82E /* AppDelegate.m */,
@@ -123,6 +132,10 @@
 				468F3509193081F900D5B82E /* ViewController.m */,
 				468F350B193081F900D5B82E /* Images.xcassets */,
 				468F34FA193081F900D5B82E /* Supporting Files */,
+				468F352C19308D8300D5B82E /* startControllerViewController.h */,
+				468F352D19308D8300D5B82E /* startControllerViewController.m */,
+				468F35321930906F00D5B82E /* ForestController.h */,
+				468F35331930906F00D5B82E /* ForestController.m */,
 			);
 			path = Uptosky;
 			sourceTree = "<group>";
@@ -164,6 +177,14 @@
 			);
 			name = EFCircularSlider;
 			path = "../../../../../Downloads/EFCircularSlider-master 2/EFCircularSlider";
+			sourceTree = "<group>";
+		};
+		468F352F19308F8100D5B82E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				468F353019308FA600D5B82E /* 222.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468F353119308FA600D5B82E /* 222.png in Resources */,
 				468F350C193081F900D5B82E /* Images.xcassets in Resources */,
 				468F34FE193081F900D5B82E /* InfoPlist.strings in Resources */,
 				468F3507193081F900D5B82E /* Main.storyboard in Resources */,
@@ -263,10 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468F35341930906F00D5B82E /* ForestController.m in Sources */,
 				468F352B19308A6400D5B82E /* EFCircularSlider.m in Sources */,
 				468F350A193081F900D5B82E /* ViewController.m in Sources */,
 				468F3504193081F900D5B82E /* AppDelegate.m in Sources */,
 				468F3500193081F900D5B82E /* main.m in Sources */,
+				468F352E19308D8300D5B82E /* startControllerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +495,7 @@
 				468F3524193081F900D5B82E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		468F3525193081F900D5B82E /* Build configuration list for PBXNativeTarget "UptoskyTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +504,7 @@
 				468F3527193081F900D5B82E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
