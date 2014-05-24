@@ -7,11 +7,15 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ForestController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSError *sessionError = nil;
+    NSError *activationError = nil;
+    [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayback error:&sessionError];
+    [[AVAudioSession sharedInstance] setActive: YES error: &activationError];
     // Override point for customization after application launch.
     return YES;
 }

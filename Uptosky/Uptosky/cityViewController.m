@@ -1,15 +1,14 @@
 //
-//  ForestController.m
+//  cityViewController.m
 //  Uptosky
 //
 //  Created by Dmitriy Bogomolov on 24.05.14.
 //  Copyright (c) 2014 Dimones-dev. All rights reserved.
 //
 
-#import "ForestController.h"
-#import "UICircularSlider.h"
+#import "cityViewController.h"
 
-@interface ForestController ()
+@interface cityViewController ()
 {
     AVAudioPlayer *player;
     AVAudioPlayer *player1;
@@ -24,11 +23,10 @@
 @property (nonatomic, retain) AVAudioPlayer *player;
 @property (nonatomic, retain) AVAudioPlayer *player1;
 @end
-
-@implementation ForestController{
+@implementation cityViewController
+{
     
 }
-
 @synthesize slider_1 = _slider_1;
 @synthesize slider_2 = _slider_2;
 @synthesize slider_3 = _slider_3;
@@ -65,7 +63,7 @@
     [[AVAudioSession sharedInstance] setActive:YES error:NULL];
     [[AVAudioSession sharedInstance] setDelegate:self];
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:NULL];
-
+    
 }
 - (IBAction)play1:(id)sender {
     NSString* resourcePath = [[NSBundle mainBundle] resourcePath];
@@ -100,7 +98,7 @@
     
     //Initialize our player pointing to the path to our resource
     player1 = [[AVAudioPlayer alloc] initWithContentsOfURL:
-              [NSURL fileURLWithPath:resourcePath] error:&err];
+               [NSURL fileURLWithPath:resourcePath] error:&err];
     
     if( err ){
         //bail!
@@ -143,5 +141,6 @@
 }
 - (IBAction)updateProgress6:(UISlider *)sender {
 }
+
 
 @end
