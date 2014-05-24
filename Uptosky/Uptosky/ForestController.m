@@ -8,7 +8,6 @@
 
 #import "ForestController.h"
 #import "UICircularSlider.h"
-
 @interface ForestController ()
 {
     AVAudioPlayer *player;

@@ -116,6 +116,7 @@
                     <tabBarItem key="tabBarItem" title="Natural" image="parks-32-64.png" id="x4n-tr-d8Q">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-1"/>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" id="QFA-Y2-c92"/>
                     <connections>
                         <outlet property="slider_1" destination="cSI-yD-P5k" id="Vnb-zW-fF8"/>
                         <outlet property="slider_2" destination="MxR-vq-nHa" id="naN-n0-97b"/>
@@ -124,11 +125,12 @@
                         <outlet property="slider_5" destination="hWV-Iv-L6w" id="V5s-kG-p6Z"/>
                         <outlet property="slider_6" destination="F5m-mg-vWF" id="SsQ-HR-na3"/>
                         <outlet property="timeToday" destination="537-N8-ukl" id="eed-b7-VY3"/>
+                        <segue destination="5xq-QH-oz6" kind="push" identifier="RUN" id="yR9-az-lUu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fW8-hp-9FA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="592" y="-154"/>
+            <point key="canvasLocation" x="592" y="-309"/>
         </scene>
         <!--Start View Controller-->
         <scene sceneID="mjL-Sr-iUX">
@@ -142,15 +144,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKT-Jk-uOB">
-                                <rect key="frame" x="0.0" y="286" width="324" height="104"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="222.png" translatesAutoresizingMaskIntoConstraints="NO" id="xxA-kO-OLm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nc6-V4-OPK">
+                                <rect key="frame" x="-4" y="264" width="324" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="66"/>
                                 <state key="normal" title="Up to sky">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2pI-Dk-70j" kind="modal" modalTransitionStyle="flipHorizontal" id="Tp7-eq-jgv"/>
+                                    <segue destination="2pI-Dk-70j" kind="modal" modalTransitionStyle="flipHorizontal" id="gdv-Vu-0BP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -181,10 +187,10 @@
             </objects>
             <point key="canvasLocation" x="58" y="173"/>
         </scene>
-        <!--City View Controller - City-->
+        <!--Forest Controller - City-->
         <scene sceneID="cuq-kP-69y">
             <objects>
-                <viewController id="5xq-QH-oz6" customClass="cityViewController" sceneMemberID="viewController">
+                <viewController id="5xq-QH-oz6" customClass="ForestController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zBm-zD-2Uq"/>
                         <viewControllerLayoutGuide type="bottom" id="QKZ-Lj-bGW"/>
@@ -300,6 +306,7 @@
                     <tabBarItem key="tabBarItem" title="City" image="city-32.png" id="Crd-iz-7PT">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-1"/>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" id="rFB-xF-SWk"/>
                     <connections>
                         <outlet property="slider_1" destination="WWG-hE-Uiv" id="wBd-WD-q7b"/>
                         <outlet property="slider_2" destination="nqy-Jq-sSX" id="mjM-Pl-eco"/>
@@ -308,11 +315,12 @@
                         <outlet property="slider_5" destination="AwM-zY-cbc" id="RZE-ND-OjJ"/>
                         <outlet property="slider_6" destination="CLG-iP-v0V" id="8Eh-kC-pZD"/>
                         <outlet property="timeToday" destination="sxm-sV-5JA" id="fpU-Hb-l7u"/>
+                        <segue destination="ocP-ok-Poj" kind="push" id="cLG-MD-gfH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugs-ZS-zlo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="592" y="520"/>
+            <point key="canvasLocation" x="578" y="505"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="sET-aL-t8Q">
@@ -344,4 +352,8 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="cLG-MD-gfH"/>
+        <segue reference="yR9-az-lUu"/>
+    </inferredMetricsTieBreakers>
 </document>
