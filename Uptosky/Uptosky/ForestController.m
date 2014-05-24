@@ -12,6 +12,11 @@
 {
     AVAudioPlayer *player;
     AVAudioPlayer *player1;
+    AVAudioPlayer *player2;
+    AVAudioPlayer *player3;
+    AVAudioPlayer *player4;
+    AVAudioPlayer *player5;
+
 }
 @property (weak, nonatomic) IBOutlet UICircularSlider *slider_2;
 @property (weak, nonatomic) IBOutlet UICircularSlider *slider_3;
@@ -22,6 +27,10 @@
 @property (weak, nonatomic) IBOutlet UICircularSlider *slider_1;
 @property (nonatomic, retain) AVAudioPlayer *player;
 @property (nonatomic, retain) AVAudioPlayer *player1;
+@property (nonatomic, retain) AVAudioPlayer *player2;
+@property (nonatomic, retain) AVAudioPlayer *player3;
+@property (nonatomic, retain) AVAudioPlayer *player4;
+@property (nonatomic, retain) AVAudioPlayer *player5;
 @end
 
 @implementation ForestController{
@@ -68,7 +77,7 @@
 }
 - (IBAction)play1:(id)sender {
     NSString* resourcePath = [[NSBundle mainBundle] resourcePath];
-    resourcePath = [resourcePath stringByAppendingString:@"/F.wav"];
+    resourcePath = [resourcePath stringByAppendingString:@"/B.wav"];
     NSLog(@"Path to play: %@", resourcePath);
     NSError* err;
     
@@ -93,7 +102,7 @@
 - (IBAction)play2:(id)sender {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"PLAY 2" object:self];
     NSString* resourcePath = [[NSBundle mainBundle] resourcePath];
-    resourcePath = [resourcePath stringByAppendingString:@"/W.wav"];
+    resourcePath = [resourcePath stringByAppendingString:@"/Fi.wav"];
     NSLog(@"Path to play: %@", resourcePath);
     NSError* err;
     
@@ -112,6 +121,102 @@
         player1.numberOfLoops = -1;
         player1.currentTime = 0;
         player1.volume = self.slider_2.value;
+    }
+}
+- (IBAction)play3:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"PLAY 2" object:self];
+    NSString* resourcePath = [[NSBundle mainBundle] resourcePath];
+    resourcePath = [resourcePath stringByAppendingString:@"/Fo.wav"];
+    NSLog(@"Path to play: %@", resourcePath);
+    NSError* err;
+    
+    //Initialize our player pointing to the path to our resource
+    player2 = [[AVAudioPlayer alloc] initWithContentsOfURL:
+               [NSURL fileURLWithPath:resourcePath] error:&err];
+    
+    if( err ){
+        //bail!
+        NSLog(@"Failed with reason: %@", [err localizedDescription]);
+    }
+    else{
+        //set our delegate and begin playback
+        player2.delegate = self;
+        [player2 play];
+        player2.numberOfLoops = -1;
+        player2.currentTime = 0;
+        player2.volume = self.slider_3.value;
+    }
+}
+- (IBAction)play4:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"PLAY 2" object:self];
+    NSString* resourcePath = [[NSBundle mainBundle] resourcePath];
+    resourcePath = [resourcePath stringByAppendingString:@"/N.wav"];
+    NSLog(@"Path to play: %@", resourcePath);
+    NSError* err;
+    
+    //Initialize our player pointing to the path to our resource
+    player3 = [[AVAudioPlayer alloc] initWithContentsOfURL:
+               [NSURL fileURLWithPath:resourcePath] error:&err];
+    
+    if( err ){
+        //bail!
+        NSLog(@"Failed with reason: %@", [err localizedDescription]);
+    }
+    else{
+        //set our delegate and begin playback
+        player3.delegate = self;
+        [player3 play];
+        player3.numberOfLoops = -1;
+        player3.currentTime = 0;
+        player3.volume = self.slider_4.value;
+    }
+}
+- (IBAction)play5:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"PLAY 2" object:self];
+    NSString* resourcePath = [[NSBundle mainBundle] resourcePath];
+    resourcePath = [resourcePath stringByAppendingString:@"/R.wav"];
+    NSLog(@"Path to play: %@", resourcePath);
+    NSError* err;
+    
+    //Initialize our player pointing to the path to our resource
+    player4 = [[AVAudioPlayer alloc] initWithContentsOfURL:
+               [NSURL fileURLWithPath:resourcePath] error:&err];
+    
+    if( err ){
+        //bail!
+        NSLog(@"Failed with reason: %@", [err localizedDescription]);
+    }
+    else{
+        //set our delegate and begin playback
+        player4.delegate = self;
+        [player4 play];
+        player4.numberOfLoops = -1;
+        player4.currentTime = 0;
+        player4.volume = self.slider_5.value;
+    }
+}
+- (IBAction)play6:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"PLAY 2" object:self];
+    NSString* resourcePath = [[NSBundle mainBundle] resourcePath];
+    resourcePath = [resourcePath stringByAppendingString:@"/W.wav"];
+    NSLog(@"Path to play: %@", resourcePath);
+    NSError* err;
+    
+    //Initialize our player pointing to the path to our resource
+    player5 = [[AVAudioPlayer alloc] initWithContentsOfURL:
+               [NSURL fileURLWithPath:resourcePath] error:&err];
+    
+    if( err ){
+        //bail!
+        NSLog(@"Failed with reason: %@", [err localizedDescription]);
+    }
+    else{
+        //set our delegate and begin playback
+        player5.delegate = self;
+        [player5 play];
+        player5.numberOfLoops = -1;
+        player5.currentTime = 0;
+        player5.volume = self.slider_6.value;
     }
 }
 
@@ -135,12 +240,20 @@
     [player1 setVolume:progress];
 }
 - (IBAction)updateProgress3:(UISlider *)sender {
+    float progress = translateValueFromSourceIntervalToDestinationInterval(sender.value, sender.minimumValue, sender.maximumValue, 0.0, 1.0);
+    [player2 setVolume:progress];
 }
 - (IBAction)updateProgress4:(UISlider *)sender {
+    float progress = translateValueFromSourceIntervalToDestinationInterval(sender.value, sender.minimumValue, sender.maximumValue, 0.0, 1.0);
+    [player3 setVolume:progress];
 }
 - (IBAction)updateProgress5:(UISlider *)sender {
+    float progress = translateValueFromSourceIntervalToDestinationInterval(sender.value, sender.minimumValue, sender.maximumValue, 0.0, 1.0);
+    [player4 setVolume:progress];
 }
 - (IBAction)updateProgress6:(UISlider *)sender {
+    float progress = translateValueFromSourceIntervalToDestinationInterval(sender.value, sender.minimumValue, sender.maximumValue, 0.0, 1.0);
+    [player5 setVolume:progress];
 }
 
 @end
