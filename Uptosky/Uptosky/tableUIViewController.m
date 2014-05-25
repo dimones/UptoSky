@@ -38,12 +38,12 @@
     NSError *error = nil;
     NSString *theJSON = [NSString stringWithContentsOfURL:theURL encoding:NSUTF8StringEncoding error:&error];
     NSLog(@"%@",theJSON);
-    NSData *allCoursesData = [[NSData alloc] initWithContentsOfURL:
+    NSData *allData = [[NSData alloc] initWithContentsOfURL:
                               [NSURL URLWithString:@"http://download.trigen.pro/uptosky/uptosky.json"]];
     
     
     NSMutableDictionary *allCourses = [NSJSONSerialization
-                                       JSONObjectWithData:allCoursesData
+                                       JSONObjectWithData:allData
                                        options:NSJSONReadingMutableContainers
                                        error:&error];
     first = allCourses[@"1"];

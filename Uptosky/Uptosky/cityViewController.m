@@ -78,7 +78,12 @@
     [self stopAll:self];
     
 }
+
+
+
+
 - (IBAction)play1:(id)sender {
+    if(!player.playing){
     NSString* resourcePath = [[NSBundle mainBundle] resourcePath];
     resourcePath = [resourcePath stringByAppendingString:@"/F1.wav"];
     NSLog(@"Path to play: %@", resourcePath);
@@ -100,9 +105,11 @@
         player.currentTime = 0;
         player.volume = self.slider_1.value;
     }
+    }else [player stop];
     
 }
 - (IBAction)play2:(id)sender {
+    if(!player1.playing){
     [[NSNotificationCenter defaultCenter] postNotificationName:@"PLAY 2" object:self];
     NSString* resourcePath = [[NSBundle mainBundle] resourcePath];
     resourcePath = [resourcePath stringByAppendingString:@"/MA1.wav"];
@@ -125,8 +132,10 @@
         player1.currentTime = 0;
         player1.volume = self.slider_2.value;
     }
+    }else [player1 stop];
 }
 - (IBAction)play3:(id)sender {
+    if(!player2.playing){
     [[NSNotificationCenter defaultCenter] postNotificationName:@"PLAY 2" object:self];
     NSString* resourcePath = [[NSBundle mainBundle] resourcePath];
     resourcePath = [resourcePath stringByAppendingString:@"/ME1.wav"];
@@ -149,8 +158,10 @@
         player2.currentTime = 0;
         player2.volume = self.slider_3.value;
     }
+    } else [player2 stop];
 }
 - (IBAction)play4:(id)sender {
+    if(!player3.playing){
     [[NSNotificationCenter defaultCenter] postNotificationName:@"PLAY 2" object:self];
     NSString* resourcePath = [[NSBundle mainBundle] resourcePath];
     resourcePath = [resourcePath stringByAppendingString:@"/S1.wav"];
@@ -173,8 +184,18 @@
         player3.currentTime = 0;
         player3.volume = self.slider_4.value;
     }
+    } else [player3 stop];
 }
+//- (IBAction)sleepMode:(id)sender {
+//    [player stop];
+//    [player1 stop];
+//    [player2 stop];
+//    [player3 stop];
+//    [player4 stop];
+//    [player5 stop];
+//}
 - (IBAction)play5:(id)sender {
+    if(!player4.playing){
     [[NSNotificationCenter defaultCenter] postNotificationName:@"PLAY 2" object:self];
     NSString* resourcePath = [[NSBundle mainBundle] resourcePath];
     resourcePath = [resourcePath stringByAppendingString:@"/P1.wav"];
@@ -197,8 +218,10 @@
         player4.currentTime = 0;
         player4.volume = self.slider_5.value;
     }
+    } else [player4 stop];
 }
 - (IBAction)play6:(id)sender {
+    if(!player5.playing){
     [[NSNotificationCenter defaultCenter] postNotificationName:@"PLAY 2" object:self];
     NSString* resourcePath = [[NSBundle mainBundle] resourcePath];
     resourcePath = [resourcePath stringByAppendingString:@"/R1.wav"];
@@ -221,6 +244,8 @@
         player5.currentTime = 0;
         player5.volume = self.slider_6.value;
     }
+    }
+    else [player5 stop];
 }
 
 - (void)initPlayers

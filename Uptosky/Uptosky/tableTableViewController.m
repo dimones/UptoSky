@@ -24,6 +24,7 @@
     NSMutableArray *itemsComment;
     NSDictionary *firstURL;
     NSArray *secondURL;
+    NSInteger cur;
 }
 @synthesize tableView;
 - (id)initWithStyle:(UITableViewStyle)style
@@ -62,7 +63,19 @@
     [table reloadData];
     [tableView reloadData];
 }
-
+- (IBAction)toDown:(id)sender {
+    
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSLog(@"prepareForSegue: %@", segue.identifier);
+    [segue.destinationViewController setName:@"Natural"];/*
+    if ([segue.identifier isEqualToString:@"Happy"]) {
+        [segue.destinationViewController setName:];
+    } else if ([segue.identifier isEqualToString:@"Sad"]) {
+        [segue.destinationViewController setHappiness:0];
+    }*/
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -84,7 +97,10 @@
     // Return the number of rows in the section.
     return [itemsName count];
 }
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    cur = indexPath.row;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -142,12 +158,12 @@
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
     //[segue segue];
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-}
+//}
 
 
 @end
